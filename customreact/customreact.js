@@ -17,7 +17,15 @@ const myElement2 = {
   children: "Hi this is paragraph",
 };
 
-const elements = [myElement, myElement2]; // Create an array of elements
+const myElement3 = {
+  type: "div",
+  props: {
+    style: "color: #FF0000",
+  },
+  children: "Hi this is div",
+};
+
+const elements = [myElement, myElement2, myElement3]; // Create an array of elements
 
 for (const element of elements) {
   renderElement(element);
